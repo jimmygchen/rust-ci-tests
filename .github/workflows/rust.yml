@@ -23,5 +23,6 @@ jobs:
     - uses: actions-rs/toolchain@v1
       with:
         toolchain: ${{ matrix.rust_version }}
+        default: true
     - name: Run tests
       run: cargo test --verbose
